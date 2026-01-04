@@ -1,0 +1,1046 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Toh Networks | Get in Touch for Internet & Security Solutions in Kibwezi</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Animation Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <style>
+        :root {
+            --primary-blue: #1e40af;
+            --secondary-blue: #3b82f6;
+            --accent-gold: #f59e0b;
+            --dark-bg: #0f172a;
+            --light-bg: #f8fafc;
+        }
+
+        @view-transition {
+            navigation: auto;
+        }
+
+        body {
+            font-family: 'Inter', 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+
+        /* Custom Animations */
+        .shimmer {
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            background-size: 200% 100%;
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+
+        .float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .pulse-gold {
+            animation: pulse-gold 2s infinite;
+        }
+
+        @keyframes pulse-gold {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7); }
+            50% { box-shadow: 0 0 0 10px rgba(245, 158, 11, 0); }
+        }
+
+        .pulse-blue {
+            animation: pulse-blue 2s infinite;
+        }
+
+        @keyframes pulse-blue {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7); }
+            50% { box-shadow: 0 0 0 10px rgba(59, 130, 246, 0); }
+        }
+
+        /* 3D Card Effects */
+        .card-3d {
+            transform-style: preserve-3d;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-3d:hover {
+            transform: translateY(-10px) rotateX(5deg);
+        }
+
+        /* Gradient Text */
+        .gradient-text {
+            background: linear-gradient(45deg, #3b82f6, #8b5cf6, #f59e0b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            background-size: 200% auto;
+            animation: gradient 3s ease infinite;
+        }
+
+        @keyframes gradient {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        /* Glass Morphism */
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Contact Icon Effects */
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, #3b82f6, #1e40af);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-method:hover .contact-icon {
+            transform: scale(1.1) rotate(10deg);
+        }
+
+        /* Form Effects */
+        .form-control {
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.2);
+        }
+
+        /* Emergency Animation */
+        .emergency-pulse {
+            animation: emergency-pulse 1.5s infinite;
+        }
+
+        @keyframes emergency-pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        /* Social Icon Effects */
+        .social-icon-large {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .social-icon-large::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent);
+            transform: rotate(45deg);
+            animation: shine 3s infinite;
+        }
+
+        @keyframes shine {
+            0% { transform: rotate(45deg) translateX(-100%); }
+            100% { transform: rotate(45deg) translateX(100%); }
+        }
+
+        /* Response Time Cards */
+        .time-metric {
+            animation: count-up 2s ease-out;
+        }
+
+        @keyframes count-up {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* WhatsApp Form Effects */
+        .whatsapp-form {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .whatsapp-form::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(37, 211, 102, 0.1), rgba(37, 211, 102, 0.2));
+            z-index: -1;
+        }
+
+        /* FAQ Animation */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .mobile-menu {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease-in-out;
+            }
+            
+            .mobile-menu.active {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-gray-800">
+    <!-- Preloader -->
+    <div class="preloader fixed inset-0 bg-gray-900 z-50 flex flex-col items-center justify-center">
+        <div class="loader flex space-x-4 mb-6">
+            <div class="network-node w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
+            <div class="network-node w-3 h-3 bg-blue-500 rounded-full animate-pulse" style="animation-delay: 0.2s"></div>
+            <div class="network-node w-3 h-3 bg-blue-500 rounded-full animate-pulse" style="animation-delay: 0.4s"></div>
+            <div class="network-node w-3 h-3 bg-blue-500 rounded-full animate-pulse" style="animation-delay: 0.6s"></div>
+        </div>
+        <p class="text-blue-400 font-semibold text-lg shimmer">Connecting to Toh Networks...</p>
+    </div>
+
+    <!-- TOH STUDIOS Announcement Bar -->
+    <div class="toh-studios-bar bg-gradient-to-r from-purple-900 via-pink-800 to-red-900 py-2">
+        <div class="container mx-auto px-4">
+            <div class="studios-content flex flex-wrap items-center justify-center space-x-4">
+                <i class="fas fa-palette text-yellow-300 text-xl"></i>
+                <h2 class="studios-title text-white font-bold text-lg">TOH STUDIOS</h2>
+                <p class="studios-tagline text-gray-300">Creative Digital Solutions • Branding • Web Design</p>
+                <a href="#" class="studios-cta bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-1 rounded-full text-sm font-semibold transition duration-300">
+                    Explore Projects <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOH NETWORKS Top Brand Bar -->
+    <div class="top-brand-bar glass py-4 border-b border-gray-700">
+        <div class="container mx-auto px-4">
+            <div class="brand-content flex flex-col md:flex-row items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <img src="images/Toh Networks.png" alt="TOH NETWORKS Logo" class="company-logo w-12 h-12 object-contain">
+                    <div>
+                        <h1 class="brand-title text-2xl font-bold gradient-text">TOH NETWORKS</h1>
+                        <p class="brand-tagline text-blue-300">Connect • Secure • Empower</p>
+                    </div>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <div class="flex items-center space-x-4">
+                        <span class="text-green-400"><i class="fas fa-circle text-xs mr-1"></i> 24/7 Support</span>
+                        <span class="text-blue-400"><i class="fas fa-bolt mr-1"></i> Fast Response</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="header sticky top-0 z-40 glass">
+        <nav class="navbar">
+            <div class="container mx-auto px-4 py-3">
+                <div class="flex items-center justify-between">
+                    <!-- Mobile Menu Button -->
+                    <button id="mobileMenuButton" class="md:hidden text-white">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+
+                    <!-- Logo -->
+                    <div class="nav-brand">
+                        <a href="index.html" class="flex items-center space-x-3">
+                            <img src="images/Toh Networks.png" alt="TOH NETWORKS Logo" class="nav-logo w-10 h-10">
+                            <div class="logo-text">
+                                <h1 class="text-xl font-bold text-white">Toh Networks</h1>
+                                <p class="text-xs text-blue-300">Since October 2025</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Desktop Navigation -->
+                    <div class="hidden md:flex space-x-8">
+                        <a href="index.html" class="nav-link text-white hover:text-blue-400 transition duration-300">
+                            <i class="fas fa-home mr-2"></i> Home
+                        </a>
+                        <a href="services.html" class="nav-link text-white hover:text-blue-400 transition duration-300">
+                            <i class="fas fa-cogs mr-2"></i> Services
+                        </a>
+                        <a href="packages.html" class="nav-link text-white hover:text-blue-400 transition duration-300">
+                            <i class="fas fa-wifi mr-2"></i> Packages
+                        </a>
+                        <a href="about.html" class="nav-link text-white hover:text-blue-400 transition duration-300">
+                            <i class="fas fa-info-circle mr-2"></i> About
+                        </a>
+                        <a href="contact.html" class="nav-link text-blue-400 font-semibold transition duration-300">
+                            <i class="fas fa-phone-alt mr-2"></i> Contact
+                        </a>
+                    </div>
+
+                    <!-- CTA Button -->
+                    <div class="nav-cta">
+                        <a href="#contact-form" class="bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white px-6 py-2 rounded-full font-semibold transition duration-300 pulse-gold">
+                            Get Free Quote <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile Navigation -->
+                <div id="mobileMenu" class="mobile-menu md:hidden mt-4 bg-gray-800 rounded-lg p-4 hidden">
+                    <div class="flex flex-col space-y-4">
+                        <a href="index.html" class="text-white hover:text-blue-400 p-2">
+                            <i class="fas fa-home mr-3"></i> Home
+                        </a>
+                        <a href="services.html" class="text-white hover:text-blue-400 p-2">
+                            <i class="fas fa-cogs mr-3"></i> Services
+                        </a>
+                        <a href="packages.html" class="text-white hover:text-blue-400 p-2">
+                            <i class="fas fa-wifi mr-3"></i> Packages
+                        </a>
+                        <a href="about.html" class="text-white hover:text-blue-400 p-2">
+                            <i class="fas fa-info-circle mr-3"></i> About
+                        </a>
+                        <a href="contact.html" class="text-blue-400 font-semibold p-2">
+                            <i class="fas fa-phone-alt mr-3"></i> Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="relative py-20 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-gray-900/50"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 animate__animated animate__fadeInDown">
+                    Get in <span class="gradient-text">Touch</span> With Us
+                </h1>
+                <p class="text-xl text-gray-300 mb-8 animate__animated animate__fadeInUp animate__delay-1s">
+                    We're here to help with all your internet and security needs in Kibwezi. Fast response guaranteed.
+                </p>
+                <div class="flex flex-wrap justify-center gap-3 mb-6 animate__animated animate__fadeInUp animate__delay-2s">
+                    <span class="glass px-4 py-2 rounded-full text-sm"><i class="fas fa-clock mr-2"></i> 24/7 Support</span>
+                    <span class="glass px-4 py-2 rounded-full text-sm"><i class="fas fa-bolt mr-2"></i> Fast Response</span>
+                    <span class="glass px-4 py-2 rounded-full text-sm"><i class="fas fa-check-circle mr-2"></i> Free Consultation</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI-Powered Contact Assistant -->
+    <section id="ai-assistant" class="py-16 bg-gradient-to-b from-gray-800 to-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <span class="text-blue-400 font-semibold">AI Assistant</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Smart Contact System</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Our AI helps route your inquiry to the right expert instantly</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-3d glass p-6 rounded-2xl" data-aos="fade-up">
+                    <div class="text-blue-400 text-3xl mb-4">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Smart Routing</h3>
+                    <p class="text-gray-400">AI directs your inquiry to the most relevant specialist</p>
+                </div>
+
+                <div class="card-3d glass p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-green-400 text-3xl mb-4">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Instant Response</h3>
+                    <p class="text-gray-400">Automated acknowledgment and quick human follow-up</p>
+                </div>
+
+                <div class="card-3d glass p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-yellow-400 text-3xl mb-4">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Priority Queue</h3>
+                    <p class="text-gray-400">Emergency issues get prioritized automatically</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Container -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Contact Information -->
+                <div class="lg:col-span-1 space-y-8">
+                    <div class="card-3d glass p-8 rounded-2xl" data-aos="fade-right">
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                        <p class="text-gray-400 mb-8">Reach out to us through any of these channels. We're always ready to help.</p>
+                        
+                        <div class="space-y-8">
+                            <div class="contact-method">
+                                <div class="flex items-start gap-6">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-xl font-bold mb-2">Phone & WhatsApp</h4>
+                                        <p class="text-gray-400 mb-3">Call us directly or WhatsApp for instant response</p>
+                                        <div class="space-y-2">
+                                            <a href="tel:0706315742" class="text-blue-400 hover:text-blue-300 transition duration-300 inline-flex items-center">
+                                                <i class="fas fa-phone mr-2"></i> 0706 315 742
+                                            </a>
+                                            <br>
+                                            <a href="https://wa.me/254706315742" class="text-green-400 hover:text-green-300 transition duration-300 inline-flex items-center">
+                                                <i class="fab fa-whatsapp mr-2"></i> WhatsApp Chat
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="flex items-start gap-6">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-xl font-bold mb-2">Email</h4>
+                                        <p class="text-gray-400 mb-3">Send us an email for detailed inquiries</p>
+                                        <div class="space-y-2">
+                                            <a href="mailto:martinmutinda095@gmail.com" class="text-blue-400 hover:text-blue-300 transition duration-300 inline-flex items-center">
+                                                <i class="fas fa-envelope mr-2"></i> martinmutinda095@gmail.com
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="flex items-start gap-6">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-xl font-bold mb-2">Office Location</h4>
+                                        <p class="text-gray-400 mb-3">Visit our office in Kibwezi Town</p>
+                                        <p class="mb-3"><strong class="text-white">Address:</strong> Kibwezi Town, Makueni County</p>
+                                        <a href="#location" class="text-blue-400 hover:text-blue-300 transition duration-300 inline-flex items-center">
+                                            <i class="fas fa-directions mr-2"></i> Get Directions
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-10 pt-8 border-t border-gray-700">
+                            <h4 class="text-xl font-bold mb-6">Business Hours</h4>
+                            <div class="space-y-3">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-300">Monday - Friday</span>
+                                    <span class="text-blue-400">8:00 AM - 6:00 PM</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-300">Saturday</span>
+                                    <span class="text-blue-400">9:00 AM - 4:00 PM</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-300">Sunday</span>
+                                    <span class="text-yellow-400">Emergency Support Only</span>
+                                </div>
+                                <div class="flex justify-between mt-4 pt-4 border-t border-gray-700">
+                                    <span class="text-green-400 font-bold">24/7 Emergency Support</span>
+                                    <span class="text-green-400 font-bold">Always Available</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass p-8 rounded-2xl" data-aos="fade-right" data-aos-delay="200">
+                        <h4 class="text-xl font-bold mb-6">Our Response Times</h4>
+                        <p class="text-gray-400 mb-6">We pride ourselves on quick responses:</p>
+                        <div class="space-y-4">
+                            <div class="time-metric">
+                                <div class="text-2xl font-bold text-green-400">15 mins</div>
+                                <div class="text-gray-400">WhatsApp Response</div>
+                            </div>
+                            <div class="time-metric" style="animation-delay: 0.2s">
+                                <div class="text-2xl font-bold text-blue-400">30 mins</div>
+                                <div class="text-gray-400">Phone Response</div>
+                            </div>
+                            <div class="time-metric" style="animation-delay: 0.4s">
+                                <div class="text-2xl font-bold text-yellow-400">2 hours</div>
+                                <div class="text-gray-400">Email Response</div>
+                            </div>
+                            <div class="time-metric" style="animation-delay: 0.6s">
+                                <div class="text-2xl font-bold text-red-400">4 hours</div>
+                                <div class="text-gray-400">On-site Emergency</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="lg:col-span-2">
+                    <div class="card-3d glass p-8 rounded-2xl" data-aos="fade-left">
+                        <h3 id="contact-form" class="text-3xl font-bold mb-6">Send Us a Message</h3>
+                        <p class="text-gray-400 mb-8 text-lg">Fill out the form below and we'll get back to you within 2 hours</p>
+                        
+                        <form id="mainContactForm" class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-gray-300 mb-2 font-medium">Your Name *</label>
+                                    <input type="text" class="form-control w-full glass border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300" 
+                                           id="name" name="name" required placeholder="Enter your full name">
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-gray-300 mb-2 font-medium">Phone Number *</label>
+                                    <input type="tel" class="form-control w-full glass border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300" 
+                                           id="phone" name="phone" required placeholder="e.g., 0706 315 742">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-300 mb-2 font-medium">Email Address *</label>
+                                <input type="email" class="form-control w-full glass border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300" 
+                                       id="email" name="email" required placeholder="your.email@example.com">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-300 mb-2 font-medium">Service Interested In *</label>
+                                <select class="form-control w-full glass border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300" 
+                                        id="service" name="service" required>
+                                    <option value="">Select a service</option>
+                                    <option value="internet">Internet Connection</option>
+                                    <option value="cctv">CCTV Installation</option>
+                                    <option value="network">Network Setup</option>
+                                    <option value="support">Technical Support</option>
+                                    <option value="quote">Request Quote</option>
+                                    <option value="other">Other Inquiry</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-300 mb-2 font-medium">Package Interested In (Optional)</label>
+                                <select class="form-control w-full glass border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300" 
+                                        id="package" name="package">
+                                    <option value="">Select a package (if applicable)</option>
+                                    <option value="home-basic">Home Basic - KES 1,500/month</option>
+                                    <option value="home-plus">Home Plus - KES 2,500/month</option>
+                                    <option value="family-premium">Family Premium - KES 4,500/month</option>
+                                    <option value="business-starter">Business Starter - KES 3,000/month</option>
+                                    <option value="business-pro">Business Pro - KES 6,500/month</option>
+                                    <option value="enterprise-elite">Enterprise Elite - KES 12,500/month</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-300 mb-2 font-medium">Your Message *</label>
+                                <textarea class="form-control w-full glass border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300 min-h-[150px]" 
+                                          id="message" name="message" required placeholder="Please describe your requirements in detail..."></textarea>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <input type="checkbox" id="newsletter" name="newsletter" class="w-4 h-4 text-blue-600 rounded">
+                                <label for="newsletter" class="ml-2 text-gray-300">Subscribe to our newsletter for updates and offers</label>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white py-4 rounded-xl font-bold text-lg transition duration-300 flex items-center justify-center pulse-blue">
+                                <i class="fas fa-paper-plane mr-2"></i> Send Message
+                            </button>
+                            
+                            <p class="text-center text-gray-400 mt-4">
+                                <i class="fas fa-shield-alt mr-2"></i> 
+                                Your information is secure and will never be shared with third parties.
+                            </p>
+                        </form>
+                    </div>
+
+                    <!-- WhatsApp Quick Form -->
+                    <div class="whatsapp-form glass p-8 rounded-2xl mt-8" data-aos="fade-up">
+                        <h3 class="text-2xl font-bold mb-6"><i class="fab fa-whatsapp text-green-400 mr-2"></i> WhatsApp Quick Inquiry</h3>
+                        <p class="text-gray-400 mb-6">Fill this form to send us a direct WhatsApp message</p>
+                        
+                        <form id="whatsappForm" class="space-y-6">
+                            <div>
+                                <label class="block text-gray-300 mb-2 font-medium">Service Interested In:</label>
+                                <select class="w-full glass border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" required>
+                                    <option value="">Select a service</option>
+                                    <option value="Internet Packages">Internet Packages</option>
+                                    <option value="CCTV Installation">CCTV Installation</option>
+                                    <option value="Network Solutions">Network Solutions</option>
+                                    <option value="Free Consultation">Free Consultation</option>
+                                </select>
+                            </div>
+                            
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-gray-300 mb-2 font-medium">Your Name:</label>
+                                    <input type="text" class="w-full glass border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" 
+                                           placeholder="John Doe" required>
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-gray-300 mb-2 font-medium">Phone Number:</label>
+                                    <input type="tel" class="w-full glass border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" 
+                                           placeholder="07XX XXX XXX" required>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-300 mb-2 font-medium">Additional Details:</label>
+                                <textarea class="w-full glass border border-gray-700 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent min-h-[100px]" 
+                                          placeholder="Tell us more about your needs..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white py-4 rounded-xl font-bold text-lg transition duration-300 flex items-center justify-center">
+                                <i class="fab fa-whatsapp mr-2"></i> Send WhatsApp Message
+                            </button>
+                            
+                            <p class="text-center text-gray-400 mt-4">
+                                <i class="fas fa-info-circle mr-2"></i> 
+                                This will open WhatsApp with a pre-filled message
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact -->
+    <section class="py-20 bg-gradient-to-b from-red-900/30 to-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="glass p-12 rounded-2xl text-center emergency-pulse" data-aos="zoom-in">
+                <div class="text-red-400 text-5xl mb-6">
+                    <i class="fas fa-life-ring"></i>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">24/7 Emergency Support</h2>
+                <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">If you're experiencing internet downtime or security system issues, call us immediately</p>
+                <div class="text-4xl md:text-5xl font-bold text-white mb-8">
+                    <a href="tel:0706315742" class="hover:text-red-300 transition duration-300">
+                        <i class="fas fa-phone mr-4"></i> 0706 315 742
+                    </a>
+                </div>
+                <p class="text-gray-400 mb-8">Our emergency team responds within 30 minutes and aims to resolve issues within 4 hours.</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="glass px-4 py-2 rounded-full"><i class="fas fa-bolt mr-2"></i> Rapid Response</span>
+                    <span class="glass px-4 py-2 rounded-full"><i class="fas fa-headset mr-2"></i> 24/7 Available</span>
+                    <span class="glass px-4 py-2 rounded-full"><i class="fas fa-tools mr-2"></i> On-site Fix</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Location</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Find us in Kibwezi Town</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="glass p-8 rounded-2xl" data-aos="fade-right">
+                    <div class="text-center mb-8">
+                        <div class="text-blue-400 text-5xl mb-4">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Kibwezi Town Office</h3>
+                        <p class="text-gray-400">We're located in the heart of Kibwezi Town, easily accessible from all directions.</p>
+                    </div>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-blue-400 mr-3"></i>
+                            <div>
+                                <strong class="text-white">Address:</strong>
+                                <p class="text-gray-400">Kibwezi Town, Makueni County</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-landmark text-blue-400 mr-3"></i>
+                            <div>
+                                <strong class="text-white">Landmark:</strong>
+                                <p class="text-gray-400">Near Kibwezi Market</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://maps.google.com/?q=Kibwezi+Town,+Makueni+County" target="_blank" class="w-full glass hover:bg-gray-800/50 text-white py-3 rounded-xl font-semibold transition duration-300 flex items-center justify-center">
+                        <i class="fas fa-directions mr-2"></i> Open in Google Maps
+                    </a>
+                </div>
+                
+                <div class="glass p-8 rounded-2xl" data-aos="fade-left">
+                    <h3 class="text-2xl font-bold mb-6">Visit Our Office</h3>
+                    <p class="text-gray-400 mb-8">Our office in Kibwezi Town is open for consultations, bill payments, and in-person support.</p>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-xl font-bold mb-4">What to Expect When You Visit:</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                                    <span class="text-gray-300">Free consultation with our experts</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                                    <span class="text-gray-300">See our equipment and solutions</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                                    <span class="text-gray-300">Immediate bill payments</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-400 mr-3"></i>
+                                    <span class="text-gray-300">Technical support assistance</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="glass p-4 rounded-xl">
+                                <h4 class="font-bold mb-2"><i class="fas fa-parking text-blue-400 mr-2"></i> Parking Available</h4>
+                                <p class="text-gray-400 text-sm">We have secure parking space for our visitors.</p>
+                            </div>
+                            
+                            <div class="glass p-4 rounded-xl">
+                                <h4 class="font-bold mb-2"><i class="fas fa-wheelchair text-blue-400 mr-2"></i> Accessible to All</h4>
+                                <p class="text-gray-400 text-sm">Our office is wheelchair accessible with ramps.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Quick answers to common contact questions</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-4">
+                    <div class="faq-item glass rounded-xl overflow-hidden" data-aos="fade-up">
+                        <div class="faq-question p-6 flex justify-between items-center cursor-pointer">
+                            <span class="text-lg font-semibold">What's the best way to reach you for urgent issues?</span>
+                            <i class="fas fa-plus faq-icon text-blue-400"></i>
+                        </div>
+                        <div class="faq-answer px-6">
+                            <p class="pb-6 text-gray-400">For urgent issues like internet downtime or security system problems, call us directly at <strong class="text-white">0706 315 742</strong>. This number is monitored 24/7 for emergency support.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item glass rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                        <div class="faq-question p-6 flex justify-between items-center cursor-pointer">
+                            <span class="text-lg font-semibold">How quickly will you respond to my inquiry?</span>
+                            <i class="fas fa-plus faq-icon text-blue-400"></i>
+                        </div>
+                        <div class="faq-answer px-6">
+                            <p class="pb-6 text-gray-400">We guarantee: WhatsApp within 15 minutes, phone calls within 30 minutes, email within 2 hours, and emergency support with immediate response.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item glass rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                        <div class="faq-question p-6 flex justify-between items-center cursor-pointer">
+                            <span class="text-lg font-semibold">Do you offer free consultations?</span>
+                            <i class="fas fa-plus faq-icon text-blue-400"></i>
+                        </div>
+                        <div class="faq-answer px-6">
+                            <p class="pb-6 text-gray-400">Yes! We offer free, no-obligation consultations for all new customers via phone, WhatsApp, or our contact form.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Contact -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Connect With Us on Social Media</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Follow us for updates, tips, and community news</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-8" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://wa.me/254706315742" target="_blank" class="social-icon-large glass w-20 h-20 rounded-full flex items-center justify-center text-3xl text-green-400">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="#" class="social-icon-large glass w-20 h-20 rounded-full flex items-center justify-center text-3xl text-blue-400">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-icon-large glass w-20 h-20 rounded-full flex items-center justify-center text-3xl text-sky-400">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-icon-large glass w-20 h-20 rounded-full flex items-center justify-center text-3xl text-pink-400">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:martinmutinda095@gmail.com" class="social-icon-large glass w-20 h-20 rounded-full flex items-center justify-center text-3xl text-yellow-400">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+            <p class="text-center mt-12 text-gray-400 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="300">
+                We regularly post updates about network maintenance, new packages, security tips, and community events in Kibwezi.
+            </p>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="glass rounded-2xl p-12 text-center" data-aos="zoom-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Get Started?</h2>
+                <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Contact us today and experience the Toh Networks difference in Kibwezi</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="tel:0706315742" class="bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white px-8 py-3 rounded-full font-semibold transition duration-300 flex items-center justify-center">
+                        <i class="fas fa-phone mr-2"></i> Call Now: 0706 315 742
+                    </a>
+                    <a href="https://wa.me/254706315742" target="_blank" class="glass hover:bg-gray-800/50 text-white px-8 py-3 rounded-full font-semibold transition duration-300 flex items-center justify-center">
+                        <i class="fab fa-whatsapp mr-2"></i> WhatsApp Us
+                    </a>
+                </div>
+                <p class="mt-6 text-green-400">
+                    <i class="fas fa-check-circle mr-2"></i> 
+                    Free consultation • No obligations • Fast response
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-gray-900 pt-12 pb-6 border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="images/Toh Networks.png" alt="Logo" class="w-10 h-10">
+                        <div>
+                            <h3 class="font-bold text-lg">Toh Networks</h3>
+                            <p class="text-sm text-blue-300">Since October 2025</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">Providing reliable internet and security solutions in Kibwezi</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-green-400"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-pink-400"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="packages.html" class="text-gray-400 hover:text-white">Packages</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Contact Methods</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-green-400"></i>
+                            0706 315 742 (24/7)
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-whatsapp mr-3 text-green-400"></i>
+                            WhatsApp Chat
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-yellow-400"></i>
+                            martinmutinda095@gmail.com
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Visit Us</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-3 text-blue-400"></i>
+                            Kibwezi Town, Makueni
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock mr-3 text-blue-400"></i>
+                            Mon-Fri: 8AM-6PM
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-life-ring mr-3 text-red-400"></i>
+                            24/7 Emergency Support
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-6 text-center">
+                <p class="text-gray-400">
+                    &copy; <span id="currentYear"></span> Toh Networks. All rights reserved. | 
+                    <span class="text-blue-300">Connect • Secure • Empower</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/254706315742" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50 transition duration-300">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="fixed bottom-6 left-6 glass hover:bg-gray-800/50 text-white p-3 rounded-full shadow-lg z-50 transition duration-300 hidden">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuButton').addEventListener('click', function() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('active');
+        });
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+
+        // Main Contact Form Handling
+        const contactForm = document.getElementById('mainContactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                submitBtn.disabled = true;
+                
+                setTimeout(() => {
+                    alert('Thank you! Your message has been sent successfully. We will contact you soon.');
+                    contactForm.reset();
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }, 1500);
+            });
+        }
+
+        // WhatsApp Form Handler
+        const whatsappForm = document.getElementById('whatsappForm');
+        if (whatsappForm) {
+            whatsappForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData(this);
+                const service = this.querySelector('select').value;
+                const name = this.querySelector('input[type="text"]').value;
+                const phone = this.querySelector('input[type="tel"]').value;
+                const message = this.querySelector('textarea').value;
+                
+                const whatsappMessage = `Hello Toh Networks!%0A%0AService: ${service}%0AName: ${name}%0APhone: ${phone}%0A%0AMessage:%0A${message}%0A%0A(From website contact form)`;
+                
+                window.open(`https://wa.me/254706315742?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+            });
+        }
+
+        // Pre-fill package if coming from packages page
+        const urlParams = new URLSearchParams(window.location.search);
+        const packageParam = urlParams.get('package');
+        if (packageParam && document.getElementById('package')) {
+            document.getElementById('package').value = packageParam;
+        }
+
+        // Back to Top Button
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.remove('hidden');
+            } else {
+                backToTop.classList.add('hidden');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Remove preloader when page loads
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                document.querySelector('.preloader').style.opacity = '0';
+                document.querySelector('.preloader').style.visibility = 'hidden';
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

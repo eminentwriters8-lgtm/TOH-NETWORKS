@@ -1,0 +1,1009 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Packages | Affordable Plans for Homes & Businesses - Toh Networks</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Animation Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <style>
+        :root {
+            --primary-blue: #1e40af;
+            --secondary-blue: #3b82f6;
+            --accent-gold: #f59e0b;
+            --dark-bg: #0f172a;
+            --light-bg: #f8fafc;
+        }
+
+        @view-transition {
+            navigation: auto;
+        }
+
+        body {
+            font-family: 'Inter', 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+
+        /* Custom Animations */
+        .shimmer {
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            background-size: 200% 100%;
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+
+        .float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .pulse-gold {
+            animation: pulse-gold 2s infinite;
+        }
+
+        @keyframes pulse-gold {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7); }
+            50% { box-shadow: 0 0 0 10px rgba(245, 158, 11, 0); }
+        }
+
+        /* 3D Card Effects */
+        .card-3d {
+            transform-style: preserve-3d;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-3d:hover {
+            transform: translateY(-10px) rotateX(5deg);
+        }
+
+        /* Gradient Text */
+        .gradient-text {
+            background: linear-gradient(45deg, #3b82f6, #8b5cf6, #f59e0b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            background-size: 200% auto;
+            animation: gradient 3s ease infinite;
+        }
+
+        @keyframes gradient {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        /* Glass Morphism */
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Speed Meter */
+        .speed-meter {
+            height: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .speed-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            border-radius: 5px;
+            transition: width 1.5s ease;
+        }
+
+        /* Package Badge */
+        .package-badge {
+            position: absolute;
+            top: 20px;
+            right: -30px;
+            background: linear-gradient(45deg, #f59e0b, #fbbf24);
+            color: #000;
+            padding: 8px 40px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transform: rotate(45deg);
+            box-shadow: 0 5px 15px rgba(245, 158, 11, 0.3);
+            z-index: 10;
+        }
+
+        /* FAQ Animation */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .mobile-menu {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease-in-out;
+            }
+            
+            .mobile-menu.active {
+                transform: translateX(0);
+            }
+            
+            .package-badge {
+                right: -25px;
+                padding: 6px 30px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-gray-800">
+    <!-- Preloader -->
+    <div class="preloader fixed inset-0 bg-gray-900 z-50 flex flex-col items-center justify-center">
+        <div class="loader flex space-x-4 mb-6">
+            <div class="network-node w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
+            <div class="network-node w-3 h-3 bg-blue-500 rounded-full animate-pulse" style="animation-delay: 0.2s"></div>
+            <div class="network-node w-3 h-3 bg-blue-500 rounded-full animate-pulse" style="animation-delay: 0.4s"></div>
+            <div class="network-node w-3 h-3 bg-blue-500 rounded-full animate-pulse" style="animation-delay: 0.6s"></div>
+        </div>
+        <p class="text-blue-400 font-semibold text-lg shimmer">Loading Toh Networks Packages...</p>
+    </div>
+
+    <!-- TOH STUDIOS Announcement Bar -->
+    <div class="toh-studios-bar bg-gradient-to-r from-purple-900 via-pink-800 to-red-900 py-2">
+        <div class="container mx-auto px-4">
+            <div class="studios-content flex flex-wrap items-center justify-center space-x-4">
+                <i class="fas fa-palette text-yellow-300 text-xl"></i>
+                <h2 class="studios-title text-white font-bold text-lg">TOH STUDIOS</h2>
+                <p class="studios-tagline text-gray-300">Creative Digital Solutions • Branding • Web Design</p>
+                <a href="#" class="studios-cta bg-yellow-500 hover:bg-yellow-600 text-black px-4 py-1 rounded-full text-sm font-semibold transition duration-300">
+                    Explore Projects <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOH NETWORKS Top Brand Bar -->
+    <div class="top-brand-bar glass py-4 border-b border-gray-700">
+        <div class="container mx-auto px-4">
+            <div class="brand-content flex flex-col md:flex-row items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <img src="images/Toh Networks.png" alt="TOH NETWORKS Logo" class="company-logo w-12 h-12 object-contain">
+                    <div>
+                        <h1 class="brand-title text-2xl font-bold gradient-text">TOH NETWORKS</h1>
+                        <p class="brand-tagline text-blue-300">Connect • Secure • Empower</p>
+                    </div>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <div class="flex items-center space-x-4">
+                        <span class="text-green-400"><i class="fas fa-circle text-xs mr-1"></i> 99.9% Uptime</span>
+                        <span class="text-blue-400"><i class="fas fa-headset mr-1"></i> 24/7 Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="header sticky top-0 z-40 glass">
+        <nav class="navbar">
+            <div class="container mx-auto px-4 py-3">
+                <div class="flex items-center justify-between">
+                    <!-- Mobile Menu Button -->
+                    <button id="mobileMenuButton" class="md:hidden text-white">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+
+                    <!-- Logo -->
+                    <div class="nav-brand">
+                        <a href="index.html" class="flex items-center space-x-3">
+                            <img src="images/Toh Networks.png" alt="TOH NETWORKS Logo" class="nav-logo w-10 h-10">
+                            <div class="logo-text">
+                                <h1 class="text-xl font-bold text-white">Toh Networks</h1>
+                                <p class="text-xs text-blue-300">Since October 2025</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Desktop Navigation -->
+                    <div class="hidden md:flex space-x-8">
+                        <a href="index.html" class="nav-link text-white hover:text-blue-400 transition duration-300">
+                            <i class="fas fa-home mr-2"></i> Home
+                        </a>
+                        <a href="services.html" class="nav-link text-white hover:text-blue-400 transition duration-300">
+                            <i class="fas fa-cogs mr-2"></i> Services
+                        </a>
+                        <a href="packages.html" class="nav-link text-blue-400 font-semibold transition duration-300">
+                            <i class="fas fa-wifi mr-2"></i> Packages
+                        </a>
+                        <a href="about.html" class="nav-link text-white hover:text-blue-400 transition duration-300">
+                            <i class="fas fa-info-circle mr-2"></i> About
+                        </a>
+                        <a href="contact.html" class="nav-link text-white hover:text-blue-400 transition duration-300">
+                            <i class="fas fa-phone-alt mr-2"></i> Contact
+                        </a>
+                    </div>
+
+                    <!-- CTA Button -->
+                    <div class="nav-cta">
+                        <a href="contact.html" class="bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white px-6 py-2 rounded-full font-semibold transition duration-300 pulse-gold">
+                            Get Connected <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile Navigation -->
+                <div id="mobileMenu" class="mobile-menu md:hidden mt-4 bg-gray-800 rounded-lg p-4 hidden">
+                    <div class="flex flex-col space-y-4">
+                        <a href="index.html" class="text-white hover:text-blue-400 p-2">
+                            <i class="fas fa-home mr-3"></i> Home
+                        </a>
+                        <a href="services.html" class="text-white hover:text-blue-400 p-2">
+                            <i class="fas fa-cogs mr-3"></i> Services
+                        </a>
+                        <a href="packages.html" class="text-blue-400 font-semibold p-2">
+                            <i class="fas fa-wifi mr-3"></i> Packages
+                        </a>
+                        <a href="about.html" class="text-white hover:text-blue-400 p-2">
+                            <i class="fas fa-info-circle mr-3"></i> About
+                        </a>
+                        <a href="contact.html" class="text-white hover:text-blue-400 p-2">
+                            <i class="fas fa-phone-alt mr-3"></i> Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Packages Hero -->
+    <section id="packages-hero" class="relative py-20 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-gray-900/50"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 animate__animated animate__fadeInDown">
+                    Internet Packages for <span class="gradient-text">Kibwezi</span>
+                </h1>
+                <p class="text-xl text-gray-300 mb-8 animate__animated animate__fadeInUp animate__delay-1s">
+                    Affordable, high-speed internet plans for homes, businesses, and institutions. No hidden fees, no contracts.
+                </p>
+                <div class="flex flex-wrap justify-center gap-3 mb-8 animate__animated animate__fadeInUp animate__delay-2s">
+                    <span class="glass px-4 py-2 rounded-full text-sm">🏠 Home Plans</span>
+                    <span class="glass px-4 py-2 rounded-full text-sm">💼 Business Plans</span>
+                    <span class="glass px-4 py-2 rounded-full text-sm">🎮 Gaming Plans</span>
+                    <span class="glass px-4 py-2 rounded-full text-sm">🏢 Enterprise Plans</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI-Powered Package Recommendations -->
+    <section id="ai-recommendations" class="py-16 bg-gradient-to-b from-gray-800 to-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <span class="text-blue-400 font-semibold">AI-Powered Selection</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Find Your Perfect Plan</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Our AI analyzes your needs to recommend the ideal package</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-3d glass p-6 rounded-2xl" data-aos="fade-up">
+                    <div class="text-blue-400 text-3xl mb-4">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Smart Matching</h3>
+                    <p class="text-gray-400">AI analyzes your usage patterns to recommend the perfect package</p>
+                </div>
+
+                <div class="card-3d glass p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-green-400 text-3xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Usage Analytics</h3>
+                    <p class="text-gray-400">Monitor your consumption and get recommendations for upgrades</p>
+                </div>
+
+                <div class="card-3d glass p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-yellow-400 text-3xl mb-4">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Auto-Optimization</h3>
+                    <p class="text-gray-400">Network automatically adjusts to ensure optimal performance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Home Packages -->
+    <section id="home-packages" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <div class="text-blue-400 text-4xl mb-4">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Home Internet Packages</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Perfect for families, students, and home offices in Kibwezi</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Home Basic -->
+                <div class="card-3d glass rounded-2xl overflow-hidden relative" data-aos="fade-right">
+                    <div class="p-8 bg-gradient-to-br from-blue-900/30 to-blue-800/20">
+                        <h3 class="text-2xl font-bold mb-4">Home Basic</h3>
+                        <div class="text-4xl font-bold text-blue-400 mb-2">15 Mbps</div>
+                        <div class="text-gray-400 mb-6">Download Speed</div>
+                        <div class="flex items-baseline">
+                            <span class="text-2xl text-gray-300">KES</span>
+                            <span class="text-5xl font-bold ml-2">1,500</span>
+                            <span class="text-gray-400 ml-2">/month</span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-8">
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>15 Mbps</strong> Download</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>10 Mbps</strong> Upload</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>Unlimited</strong> Data</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>2-4 Devices</strong></span>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html?package=home-basic" class="w-full glass hover:bg-gray-800/50 text-white py-3 rounded-full font-semibold transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-shopping-cart mr-2"></i> Select Plan
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Home Plus -->
+                <div class="card-3d glass rounded-2xl overflow-hidden relative scale-105" data-aos="zoom-in">
+                    <div class="package-badge">Most Popular</div>
+                    <div class="p-8 bg-gradient-to-br from-blue-600 to-blue-800">
+                        <h3 class="text-2xl font-bold mb-4 text-white">Home Plus</h3>
+                        <div class="text-4xl font-bold text-white mb-2">25 Mbps</div>
+                        <div class="text-blue-200 mb-6">Download Speed</div>
+                        <div class="flex items-baseline">
+                            <span class="text-2xl text-white">KES</span>
+                            <span class="text-5xl font-bold ml-2 text-white">2,500</span>
+                            <span class="text-blue-200 ml-2">/month</span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-8">
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>25 Mbps</strong> Download</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>20 Mbps</strong> Upload</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>Unlimited Premium</strong> Data</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>4-8 Devices</strong></span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>4K Streaming</strong></span>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html?package=home-plus" class="w-full bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white py-3 rounded-full font-semibold transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-bolt mr-2"></i> Get Started
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Family Premium -->
+                <div class="card-3d glass rounded-2xl overflow-hidden relative" data-aos="fade-left">
+                    <div class="p-8 bg-gradient-to-br from-yellow-900/30 to-yellow-800/20">
+                        <h3 class="text-2xl font-bold mb-4">Family Premium</h3>
+                        <div class="text-4xl font-bold text-yellow-400 mb-2">40 Mbps</div>
+                        <div class="text-gray-400 mb-6">Download Speed</div>
+                        <div class="flex items-baseline">
+                            <span class="text-2xl text-gray-300">KES</span>
+                            <span class="text-5xl font-bold ml-2">4,500</span>
+                            <span class="text-gray-400 ml-2">/month</span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-8">
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>40 Mbps</strong> Download</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>30 Mbps</strong> Upload</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>Unlimited Premium</strong> Data</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>Gaming Optimized</strong></span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>Multi-4K Streaming</strong></span>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html?package=family-premium" class="w-full glass hover:bg-gray-800/50 text-white py-3 rounded-full font-semibold transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-crown mr-2"></i> Select Premium
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Packages -->
+    <section id="business-packages" class="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <div class="text-green-400 text-4xl mb-4">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Business Internet Packages</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Reliable connectivity for shops, offices, and enterprises in Kibwezi</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Business Starter -->
+                <div class="card-3d glass rounded-2xl overflow-hidden relative" data-aos="fade-right">
+                    <div class="p-8 bg-gradient-to-br from-green-900/30 to-green-800/20">
+                        <h3 class="text-2xl font-bold mb-4">Business Starter</h3>
+                        <div class="text-4xl font-bold text-green-400 mb-2">20 Mbps</div>
+                        <div class="text-gray-400 mb-6">Download Speed</div>
+                        <div class="flex items-baseline">
+                            <span class="text-2xl text-gray-300">KES</span>
+                            <span class="text-5xl font-bold ml-2">3,000</span>
+                            <span class="text-gray-400 ml-2">/month</span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-8">
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>20 Mbps</strong> Download</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>15 Mbps</strong> Upload</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>Unlimited Business</strong> Data</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>5-10 Users</strong></span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>Business Security</strong></span>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html?package=business-starter" class="w-full glass hover:bg-gray-800/50 text-white py-3 rounded-full font-semibold transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-store mr-2"></i> For Small Shops
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Business Pro -->
+                <div class="card-3d glass rounded-2xl overflow-hidden relative scale-105" data-aos="zoom-in">
+                    <div class="package-badge" style="background: linear-gradient(45deg, #1e40af, #3b82f6);">Recommended</div>
+                    <div class="p-8 bg-gradient-to-br from-blue-900 to-blue-800">
+                        <h3 class="text-2xl font-bold mb-4 text-white">Business Pro</h3>
+                        <div class="text-4xl font-bold text-white mb-2">50 Mbps</div>
+                        <div class="text-blue-200 mb-6">Download Speed</div>
+                        <div class="flex items-baseline">
+                            <span class="text-2xl text-white">KES</span>
+                            <span class="text-5xl font-bold ml-2 text-white">6,500</span>
+                            <span class="text-blue-200 ml-2">/month</span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-8">
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>50 Mbps</strong> Download</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>40 Mbps</strong> Upload</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>Unlimited Premium</strong> Data</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>10-20 Users</strong></span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>Advanced Security</strong></span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>Static IP Included</strong></span>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html?package=business-pro" class="w-full bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white py-3 rounded-full font-semibold transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-building mr-2"></i> For Medium Offices
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Enterprise Elite -->
+                <div class="card-3d glass rounded-2xl overflow-hidden relative" data-aos="fade-left">
+                    <div class="p-8 bg-gradient-to-br from-purple-900/30 to-purple-800/20">
+                        <h3 class="text-2xl font-bold mb-4">Enterprise Elite</h3>
+                        <div class="text-4xl font-bold text-purple-400 mb-2">100 Mbps</div>
+                        <div class="text-gray-400 mb-6">Download Speed</div>
+                        <div class="flex items-baseline">
+                            <span class="text-2xl text-gray-300">KES</span>
+                            <span class="text-5xl font-bold ml-2">12,500</span>
+                            <span class="text-gray-400 ml-2">/month</span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-8">
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>100 Mbps</strong> Download</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>80 Mbps</strong> Upload</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>Unlimited Enterprise</strong> Data</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>20-50+ Users</strong></span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>Multiple Static IPs</strong></span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-400 mr-3"></i>
+                                <span><strong>Dedicated Bandwidth</strong></span>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html?package=enterprise-elite" class="w-full glass hover:bg-gray-800/50 text-white py-3 rounded-full font-semibold transition duration-300 flex items-center justify-center">
+                            <i class="fas fa-city mr-2"></i> For Large Enterprises
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speed Comparison -->
+    <section id="speed-comparison" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Speed Comparison</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">See how our packages compare for different activities</p>
+            </div>
+
+            <div class="glass p-8 rounded-2xl" data-aos="fade-up">
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-300">Email & Web Browsing</span>
+                            <span class="text-blue-400">5 Mbps</span>
+                        </div>
+                        <div class="speed-meter">
+                            <div class="speed-fill" style="width: 5%"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-300">HD Video Streaming</span>
+                            <span class="text-blue-400">15 Mbps</span>
+                        </div>
+                        <div class="speed-meter">
+                            <div class="speed-fill" style="width: 15%"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-300">4K Video Streaming</span>
+                            <span class="text-blue-400">25 Mbps</span>
+                        </div>
+                        <div class="speed-meter">
+                            <div class="speed-fill" style="width: 25%"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-300">Online Gaming</span>
+                            <span class="text-blue-400">40 Mbps</span>
+                        </div>
+                        <div class="speed-meter">
+                            <div class="speed-fill" style="width: 40%"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-300">Home Office (Video Calls)</span>
+                            <span class="text-blue-400">50 Mbps</span>
+                        </div>
+                        <div class="speed-meter">
+                            <div class="speed-fill" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-300">Small Business</span>
+                            <span class="text-blue-400">100 Mbps</span>
+                        </div>
+                        <div class="speed-meter">
+                            <div class="speed-fill" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- API Integration for Business -->
+    <section id="api-integration" class="py-20 bg-gradient-to-b from-gray-800 to-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <span class="text-purple-400 font-semibold">Business Integration</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Network Management API</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Monitor and manage your business network programmatically</p>
+            </div>
+
+            <div class="glass rounded-2xl overflow-hidden" data-aos="fade-up">
+                <div class="bg-gray-800 px-6 py-4 border-b border-gray-700">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                        <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                        <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                        <span class="text-gray-400 ml-4">network_api.js</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <pre class="text-sm text-gray-300 overflow-x-auto">
+<code>// Toh Networks Business API
+const tohAPI = {
+    // Monitor network usage
+    monitorUsage: (apiKey) => {
+        return fetch('https://api.tohnetworks.co.ke/v1/usage', {
+            headers: { 'Authorization': `Bearer ${apiKey}` }
+        });
+    },
+    
+    // Get real-time speed test
+    speedTest: () => {
+        return {
+            download: '50 Mbps',
+            upload: '40 Mbps',
+            latency: '15ms',
+            timestamp: new Date().toISOString()
+        };
+    },
+    
+    // Business analytics dashboard
+    getAnalytics: (period = 'monthly') => {
+        return {
+            totalUsage: '1.2 TB',
+            peakHours: '19:00 - 22:00',
+            averageSpeed: '48.5 Mbps',
+            uptime: '99.9%'
+        };
+    }
+};</code>
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Get answers to common questions about our internet packages</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-4">
+                    <div class="faq-item glass rounded-xl overflow-hidden" data-aos="fade-up">
+                        <div class="faq-question p-6 flex justify-between items-center cursor-pointer">
+                            <span class="text-lg font-semibold">What's included in the installation fee?</span>
+                            <i class="fas fa-plus faq-icon text-blue-400"></i>
+                        </div>
+                        <div class="faq-answer px-6">
+                            <p class="pb-6 text-gray-400">Our installation includes all necessary equipment (router/modem), setup, configuration, and basic testing. For standard installations, there's no additional fee for the first month. Special installations may have additional charges which we discuss upfront.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item glass rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                        <div class="faq-question p-6 flex justify-between items-center cursor-pointer">
+                            <span class="text-lg font-semibold">Is there a contract or lock-in period?</span>
+                            <i class="fas fa-plus faq-icon text-blue-400"></i>
+                        </div>
+                        <div class="faq-answer px-6">
+                            <p class="pb-6 text-gray-400">No! We believe in service quality. There are no long-term contracts. You can upgrade, downgrade, or cancel your service with 30 days' notice. We're confident you'll stay because of our excellent service, not because of a contract.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item glass rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                        <div class="faq-question p-6 flex justify-between items-center cursor-pointer">
+                            <span class="text-lg font-semibold">What happens if the internet goes down?</span>
+                            <i class="fas fa-plus faq-icon text-blue-400"></i>
+                        </div>
+                        <div class="faq-answer px-6">
+                            <p class="pb-6 text-gray-400">We offer 24/7 technical support. If your internet goes down, call us immediately at 0706 315 742. Our average response time is under 30 minutes, and we guarantee to resolve most issues within 4 hours. Business packages include priority support with guaranteed 2-hour response time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="glass rounded-2xl p-12 text-center" data-aos="zoom-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Get the Perfect Internet Package?</h2>
+                <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Contact us today and we'll help you choose the best plan for your needs in Kibwezi</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white px-8 py-3 rounded-full font-semibold transition duration-300 flex items-center justify-center">
+                        <i class="fas fa-calendar-alt mr-2"></i> Get Free Consultation
+                    </a>
+                    <a href="tel:0706315742" class="glass hover:bg-gray-800/50 text-white px-8 py-3 rounded-full font-semibold transition duration-300 flex items-center justify-center">
+                        <i class="fas fa-phone mr-2"></i> Call: 0706 315 742
+                    </a>
+                </div>
+                <p class="mt-6 text-green-400"><i class="fas fa-check-circle mr-2"></i> Free installation for all new connections</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-gray-900 pt-12 pb-6 border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="images/Toh Networks.png" alt="Logo" class="w-10 h-10">
+                        <div>
+                            <h3 class="font-bold text-lg">Toh Networks</h3>
+                            <p class="text-sm text-blue-300">Since October 2025</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">Providing reliable internet and security solutions in Kibwezi</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-green-400"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-pink-400"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="packages.html" class="text-blue-400 font-semibold">Packages</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Package Categories</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home-packages" class="text-gray-400 hover:text-white">Home Packages</a></li>
+                        <li><a href="#business-packages" class="text-gray-400 hover:text-white">Business Packages</a></li>
+                        <li><a href="#special-packages" class="text-gray-400 hover:text-white">Special Packages</a></li>
+                        <li><a href="#api-integration" class="text-gray-400 hover:text-white">Business API</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-3 text-blue-400"></i>
+                            Kibwezi Town, Makueni
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-green-400"></i>
+                            0706 315 742
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-yellow-400"></i>
+                            martinmutinda095@gmail.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-6 text-center">
+                <p class="text-gray-400">
+                    &copy; <span id="currentYear"></span> Toh Networks. All rights reserved. | 
+                    <span class="text-blue-300">Connect • Secure • Empower</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/254706315742?text=Hello%20TOH%20NETWORKS!%20I'm%20interested%20in%20your%20internet%20packages%20and%20would%20like%20to%20get%20more%20information." class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50 transition duration-300">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="fixed bottom-6 left-6 glass hover:bg-gray-800/50 text-white p-3 rounded-full shadow-lg z-50 transition duration-300 hidden">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuButton').addEventListener('click', function() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('active');
+        });
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+
+        // Animate speed bars
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const speedBars = document.querySelectorAll('.speed-fill');
+                    speedBars.forEach(bar => {
+                        const width = bar.style.width;
+                        bar.style.width = '0';
+                        setTimeout(() => {
+                            bar.style.width = width;
+                        }, 300);
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const comparisonSection = document.querySelector('#speed-comparison');
+        if (comparisonSection) {
+            observer.observe(comparisonSection);
+        }
+
+        // Back to Top Button
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.remove('hidden');
+            } else {
+                backToTop.classList.add('hidden');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Package selection highlight
+        const urlParams = new URLSearchParams(window.location.search);
+        const selectedPackage = urlParams.get('package');
+        if (selectedPackage) {
+            setTimeout(() => {
+                const packageCard = document.querySelector(`[href*="${selectedPackage}"]`)?.closest('.card-3d');
+                if (packageCard) {
+                    packageCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    packageCard.classList.add('pulse-gold');
+                    setTimeout(() => {
+                        packageCard.classList.remove('pulse-gold');
+                    }, 3000);
+                }
+            }, 1000);
+        }
+
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Remove preloader when page loads
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                document.querySelector('.preloader').style.opacity = '0';
+                document.querySelector('.preloader').style.visibility = 'hidden';
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
